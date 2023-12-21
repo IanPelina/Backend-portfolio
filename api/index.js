@@ -23,6 +23,11 @@ const allowCors = handler => async (req, res) => {
     return
   }
   return await handler(req, res)
+  if(req.method === 'OPTIONS') {
+    return res.status(200).json(({
+        body: "OK"
+    }))
+  }
 }
 
 app.get("/api/works", allowCors((req, res) => {
