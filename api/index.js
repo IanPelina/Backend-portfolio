@@ -6,13 +6,13 @@ const works = require("./data/works");
 const sendMail = require("./services/nodemailer");
 
 app.use(cors({
-  origin: 'https://front-portfolio-ianpelina.vercel.app/'
+  origin: 'https://portfolio-8yd810tpv-ianpelinas-projects.vercel.app/'
 }));
 
 app.use(require('express').json())
 
 const allowCors = handler => async (req, res) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://front-portfolio-ianpelina.vercel.app/')
+  res.setHeader('Access-Control-Allow-Origin', 'https://portfolio-8yd810tpv-ianpelinas-projects.vercel.app/')
   res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT')
   res.setHeader(
     'Access-Control-Allow-Headers',
