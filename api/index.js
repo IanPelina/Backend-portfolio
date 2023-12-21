@@ -1,17 +1,10 @@
 require("dotenv").config();
 const app = require('express')();
-const cors = require('cors');
-
 
 const works = require("./data/works");
 
 const sendMail = require("./services/nodemailer");
 
-// Autorisation CORS
-app.use(cors({
-  origin: process.env.CLIENT,  // Ajoutez l'origine de votre frontend ici
-  credentials: true,
-}));
 
 app.use(require('express').json())
 
