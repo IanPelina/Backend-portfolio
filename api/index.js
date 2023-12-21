@@ -1,8 +1,14 @@
+const cors = require('cors');
 const app = require('express')();
 
 const works = require("./data/works");
 
 const sendMail = require("./services/nodemailer");
+
+app.use(cors({
+  origin: '*',
+  credentials: true,
+}));
 
 app.use(require('express').json())
 
