@@ -1,0 +1,28 @@
+.collapse-container {
+    color: white;
+    box-shadow: 1px 1px 6px #323d84, -1px -1px 6px #3a1869;
+    border-radius: 3px;
+    backdrop-filter: blur(100px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.5);
+    width: 81.766%;
+    .title {
+        display: flex;
+        padding: 5px 10px;
+        border-radius: 3px;
+        margin-bottom: -4px;
+        align-items: baseline;
+        cursor: pointer;
+        .title-text {
+            flex: 1;
+        }
+    }
+    .icon {
+        cursor: pointer;
+    }
+    .content {
+        padding: 10px;
+        background-color: #323d84;
+        border-radius: 0 0 3px 3px;
+    }
+}
