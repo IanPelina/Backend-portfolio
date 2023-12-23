@@ -4,6 +4,14 @@ const works = require("./data/works");
 
 const sendMail = require("./services/nodemailer");
 
+const cors = require('cors');
+
+app .use(cors({
+  origin: 'http://localhost:3000',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true
+}))
+
 app.use(require('express').json())
 
 app.get("/api/works", (req, res) => {
