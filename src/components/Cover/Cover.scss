@@ -9,10 +9,10 @@
     color: #fff;
     text-align: left;
     font-size: 16px;
-    background-color: rgba(16, 9, 31, .4);
-    border-radius: 15px;
-    backdrop-filter: blur(30px) saturate(180%);
-    min-height: 350px;
+    background-color: rgba(17, 25, 40, 0.8);
+    border-radius: 7px;
+    backdrop-filter: blur(100px) saturate(180%);
+    height: 380px;
 }
 
 .snip1577 *,
@@ -30,6 +30,9 @@
     backface-visibility: hidden;
     vertical-align: top;
     object-fit: cover;
+    @media screen and (max-width: 375px) {
+        object-fit: contain;
+    }
 }
 
 .snip1577:before,
@@ -174,7 +177,13 @@
             opacity: 0.1;
             &:hover {
                 opacity: 1;
+                scale: 1.1;
             }
+        }
+    }
+    p {
+        @media screen and (max-width: 375px) {
+            font-size: 10px;
         }
     }
 }

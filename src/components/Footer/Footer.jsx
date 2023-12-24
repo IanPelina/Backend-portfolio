@@ -10,9 +10,6 @@ export default function Footer() {
                 <li>
                     <a aria-label='linkedin-logo' alt='linkedin' href="https://fr.linkedin.com/"><i className="fab fa-linkedin-in icon"></i></a>
                 </li>
-                <li>
-                    <a aria-label='twitter-logo' alt='twitter' href="https://twitter.com/?lang=fr"><i className="fab fa-twitter icon"></i></a>
-                </li>
             </ul>
             <div>
                 <p>© Ian LE PAPE, Tous droits réservés.</p>

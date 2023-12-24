@@ -5,11 +5,9 @@ import Presentation from '../../components/Presentation/Presentation';
 import Projects from '../../components/Projects/Projects';
 import './Home.scss';
 
-import backgrounds from '../../data/backgrounds.json';
-
 export default function Home() {
     
-    const path = backgrounds[0].path; 
+    const path = '/images/pres-back.jpeg'; 
 
     return (
         <div className="home-container" style={{ backgroundImage: `url(${path})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>

@@ -41,6 +41,7 @@ export default function Form() {
 
     return (
         <div className='form-container' id='contact'>
+            <h1>Contact</h1>
             <form className="form" required>
                 <div className="form--text">
                     <div className='form-fields'>

@@ -19,6 +19,11 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    @media screen and (max-width: 768px) {
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+    }
 }
 
 .error-logo {
@@ -42,6 +47,7 @@
     flex-direction: column;
     justify-content: center;
     z-index: 5;
+    align-items: center;
     .Typewriter__wrapper {
         color: #0cddb0;
         font-size: 36px;

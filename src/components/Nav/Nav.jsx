@@ -2,8 +2,6 @@ import { useState } from 'react';
 import './Nav.scss';
 import { Link } from 'react-router-dom';
 
-import backgrounds from '../../data/backgrounds.json';
-
 export default function Nav({children}) {
 
     const [visible, setVisible] = useState(false);
@@ -11,7 +9,7 @@ export default function Nav({children}) {
         setVisible(!visible)
     }
 
-    const path = backgrounds[1].path;
+    const path = '/images/IMG_6556.jpg';
 
     return (
         <nav className='nav'>
@@ -28,19 +26,23 @@ export default function Nav({children}) {
                     </div>
                 }
                 {visible && 
-                    <div className="displayedMenu">
+                    <>
+                    <div className='cross' onClick={displayMenu}>
                         <div className='cross-container'>
                             <div className="cross-button" onClick={displayMenu}>
                                 <div className='barr1'></div>
                                 <div className='barr2'></div>
                             </div>
                         </div>
+                    </div>
+                    <div className="displayedMenu">
                         <ul className='displayedLinks'>
                             <li><a className='link' href='/cv-dev.pdf' target='_blank'>CV</a></li>
                             <li><a className='link' href='/#mes-projets'>Projets</a></li>
                             <li><a className='link' href="/#contact">Contact</a></li>
                         </ul>
                     </div>
+                    </>
                 }
                 {children}
         </nav>

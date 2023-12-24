@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 
 import { useParams, useNavigate } from 'react-router-dom';
 
-import backgrounds from '../../data/backgrounds.json';
-
 import Nav from '../../components/Nav/Nav';
 
 import Footer from '../../components/Footer/Footer';
@@ -19,7 +17,7 @@ import Cover from '../../components/Cover/Cover';
 
 export default function ProjectsDetails() {
 
-  const path = backgrounds[2].path;
+  const path = '/images/cv-back.jpg'
 
   const navigate = useNavigate();
   const { id } = useParams();
@@ -31,7 +29,7 @@ export default function ProjectsDetails() {
       setDetailsWork(data.work);
       if (!data) { navigate("/404"); }
     }).catch(() => { navigate("/404"); });
-  }, [id, navigate]);
+  }, [id]);
 
   return detailsWork && (
   
@@ -46,10 +44,10 @@ export default function ProjectsDetails() {
           </Nav>
         </header>
         <main className='work-container'>
-          <div className="work-details">
+          <div className="work-details" id='cover-container'>
             <Cover detailsWork={detailsWork} />
           </div>
-          <div className='work-details'>
+          <div className='work-details' id='second-container'>
             <div className='work-detail practice'>
               <h2>Pratique</h2>
               <div className="practice-container">

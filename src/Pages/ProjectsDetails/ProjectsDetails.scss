@@ -11,19 +11,38 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.8); /* Ajustez la valeur alpha (0.5) pour changer l'opacité */
+        background-color: rgba(0, 0, 0, 0.8);
     }
     .work-container  {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 1.5rem;
+        #cover-container {
+            @media screen and (max-width: 1024px) {
+                width: 500px;
+            }
+            @media screen and (max-width: 769px) {
+                width: 300px;
+                margin: 3rem 0 0;
+            }
+        }
+        #second-container {
+            @media screen and (max-width: 1024px) {
+                width: 500px;
+                flex-direction: column;
+                align-items: center;
+            }
+            @media screen and (max-width: 769px) {
+                width: 300px;
+            }
+        }
         .work-details {
-            margin: 2.29rem 0;
+            margin: 0;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 50px;
+            gap: 10px;
             .practice, .acquired {
                 overflow: auto;
             }
@@ -39,25 +58,23 @@
             .work-detail {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                border-radius: 15px;
-                width: 350px;
+                border-radius: 7px;
+                width: 370px;
                 height: 450px;
                 backdrop-filter: blur(10px) saturate(180%);
-                -webkit-backdrop-filter: blur(10px) saturate(180%);
                 background-color: rgba(17, 25, 40, 0.5);
                 &:hover {
-                    box-shadow: 3px 3px 7px #200265, -3px -3px 7px #043788;
+                    backdrop-filter: blur(100px) saturate(180%);
+                    background-color: rgba(17, 25, 40, 0.8);
                 }
+
+                @media screen and (max-width: 1024px) {
+                    width: 480px;
+                }
+                
                 @media screen and (max-width: 769px) {
-                    width: 250px;
+                    width: 280px;
                     height: 350px;
-                }
-                img {
-                width: 100%;
-                height: 99%;
-                object-fit: cover;
-                overflow: hidden;
                 }
                 h2 {
                     text-align: center;
@@ -75,7 +92,6 @@
                     font-family: "signika", sans-serif;
                     font-weight: 500;
                     font-size: medium;
-                    height: 100%;
                     text-align: center;
                 }
                 .acquired-container {
@@ -87,16 +103,10 @@
                     align-items: center;
                     justify-content: center;
                     gap: 30px;
-                    height: 100%;
                     color: white;
                     font-family: "signika", sans-serif;
                     padding: 1rem;
                 }
-            }
-            .acquired {
-                backdrop-filter: blur(100px) saturate(180%);
-                -webkit-backdrop-filter: blur(10px) saturate(180%);
-                background-color: rgba(17, 25, 40, 0.5);
             }
         }
     }    

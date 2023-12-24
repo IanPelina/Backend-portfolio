@@ -1,10 +1,13 @@
 .presentation {
-    min-height: 80vh;
+   height: 80vh;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    @media screen and (max-width: 375px) {
+        margin-top: 3rem;
+    }
     .presentation-content {
         display: flex;
         justify-content: center;
@@ -12,17 +15,21 @@
         color: white;
         z-index: 5;
         @media screen and (max-width: 1024px) {
-            flex-direction: column-reverse;
+            flex-direction: column;
             align-items: center;
         }
         .title-and-text {
             margin-right: 130px;
             padding: 1rem;
-            border-radius: 15px 15px 0 0;
             text-align: start;
             @media screen and (max-width: 1024px) {
                 text-align: center;
                 margin: 0;
+            }
+            @media screen and (max-width: 375px) {
+                backdrop-filter: blur(50px) saturate(180%);
+                background-color: rgba(17, 25, 40, 0.8);
+                border-radius: 5px;
             }
             .Typewriter__wrapper {
                 margin: 0;
@@ -48,6 +55,9 @@
             font-size: 25px;
             max-width: 550px;
             margin-top: 20px;
+            @media screen and (max-width: 375px) {
+                font-size: 18px;
+            }
         }
 
     }
@@ -57,5 +67,8 @@
         height: 200px;
         border-radius: 50%;
         box-shadow: 4px 4px 10px #390867, -4px -4px 10px#1848b1;
+        @media screen and (max-width: 375px) {
+            margin-bottom: 50px;
+        }
     }
 }

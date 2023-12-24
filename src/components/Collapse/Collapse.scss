@@ -1,11 +1,8 @@
 .collapse-container {
     color: white;
-    box-shadow: 1px 1px 6px #323d84, -1px -1px 6px #3a1869;
     border-radius: 3px;
-    backdrop-filter: blur(100px) saturate(180%);
-    -webkit-backdrop-filter: blur(10px) saturate(180%);
-    background-color: rgba(17, 25, 40, 0.5);
     width: 81.766%;
+    box-shadow: 2px 2px 7px rgba(8, 12, 20, 0.8), -2px -2px 7px rgba(27, 38, 60, 0.8);
     .title {
         display: flex;
         padding: 5px 10px;
