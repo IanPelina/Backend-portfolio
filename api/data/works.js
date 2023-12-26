@@ -271,7 +271,7 @@ module.exports = [
         ],
         "description" : "Débbugage du site d'évenementiel 724 Events.",
         "context": [
-            "724events vous contacte pour une mission. L’agence souhaite publier la nouvelle version de son site vitrine.",
+            "L’agence souhaite publier la nouvelle version de son site vitrine.",
             "Le site est fonctionnel, mais quelques bugs entravent le bon usage par les visiteurs. 724events fait donc appel à vous pour finaliser le travail."
         ],
         "practice": [
@@ -316,7 +316,7 @@ module.exports = [
         "context": [
             "Vous venez d’intégrer Argent Bank comme développeur front-end.",
             "Argent Bank est une nouvelle banque en ligne qui souhaite percer dans le secteur bancaire.",
-            "Vous travaillez avec Mila, la cheffe de projet, pour la mise en place du tableau de bord des utilisateurs."
+            "Vous mettrez en place le tableau de bord des utilisateurs."
         ],
         "practice": [
             {

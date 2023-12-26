@@ -13,6 +13,26 @@
         left: 0;
         background-color: rgba(0, 0, 0, 0.8);
     }
+    .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .nav-container {
+            width: 750px;
+            @media screen and (max-width: 1024px) {
+                width: 500px;
+            }  
+            @media screen and (max-width: 769px) {
+                width: 300px;
+            }
+            nav {
+                padding: 2rem 0 2rem .5rem;
+                .links {
+                    display: block;
+                }
+            }   
+        }
+    }
     .work-container  {
         display: flex;
         flex-direction: column;

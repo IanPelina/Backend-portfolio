@@ -1,9 +1,7 @@
 import {Routes, Route} from "react-router-dom";
 
 import Home from "../Pages/Home/Home";
-
 import ProjectsDetails from "../Pages/ProjectsDetails/ProjectsDetails";
-
 import ErrorPage from "../Pages/Error/ErrorPage";
 
 export default function Router() {

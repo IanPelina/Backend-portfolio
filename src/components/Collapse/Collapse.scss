@@ -13,8 +13,12 @@
         .title-text {
             flex: 1;
         }
+        .actived {
+            transform: rotate(180deg);
+        }
     }
     .icon {
+        transition: .4s;
         cursor: pointer;
     }
     .content {

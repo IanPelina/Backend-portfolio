@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react';
 
 import { useParams, useNavigate } from 'react-router-dom';
 
-import Nav from '../../components/Nav/Nav';
-
 import Footer from '../../components/Footer/Footer';
 import Collapse from '../../components/Collapse/Collapse';
 
@@ -14,6 +12,7 @@ import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 import api from '../../axios';
 import Cover from '../../components/Cover/Cover';
+import Nav from '../../components/Nav/Nav';
 
 export default function ProjectsDetails() {
 
@@ -36,12 +35,15 @@ export default function ProjectsDetails() {
     <div className="background" style={{ backgroundImage: `url(${path})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
       <div>
         <header>
-          <Nav>
-            <ul className='links'>
-              <li><a className='link' href="/">Accueil</a></li>
-              <li><a className='link' href="/contact">Contact</a></li>
-            </ul>
-          </Nav>
+          <div className="center-container">
+            <div className='nav-container'>
+              <Nav>
+                <ul className='links'>
+                  <li><a className='link' href="/">Accueil</a></li>
+                </ul>
+              </Nav>
+            </div>
+          </div>
         </header>
         <main className='work-container'>
           <div className="work-details" id='cover-container'>

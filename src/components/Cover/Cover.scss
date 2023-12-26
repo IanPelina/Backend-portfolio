@@ -2,7 +2,7 @@
     font-family: 'Montserrat', Arial, sans-serif;
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    overflow: auto;
     margin: 10px;
     min-width: 230px;
     width: 750px;
@@ -30,9 +30,6 @@
     backface-visibility: hidden;
     vertical-align: top;
     object-fit: cover;
-    @media screen and (max-width: 375px) {
-        object-fit: contain;
-    }
 }
 
 .snip1577:before,

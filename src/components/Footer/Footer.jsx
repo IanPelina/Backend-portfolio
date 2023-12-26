@@ -8,7 +8,7 @@ export default function Footer() {
                     <a aria-label='git-logo' alt='git' href="https://github.com/"><i className="fab fa-github icon"></i></a>
                 </li>
                 <li>
-                    <a aria-label='linkedin-logo' alt='linkedin' href="https://fr.linkedin.com/"><i className="fab fa-linkedin-in icon"></i></a>
+                    <a aria-label='linkedin-logo' alt='linkedin' href="https://www.linkedin.com/in/ian-le-pape-7290ba2a4/"><i className="fab fa-linkedin-in icon"></i></a>
                 </li>
             </ul>
             <div>
