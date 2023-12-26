@@ -1,12 +1,10 @@
 import './Presentation.scss';
 
-import backgrounds from '../../data/backgrounds.json';
-
 import Typewriter from 'typewriter-effect';
 
 export default function Presentation() {
     
-    const path = backgrounds[1].path;
+    const path = '/images/IMG_6556.jpg';
 
     return (
         <section className="presentation">

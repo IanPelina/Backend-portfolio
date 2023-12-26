@@ -1,7 +1,6 @@
 import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import './ErrorPage.scss';
-import backgrounds from '../../data/backgrounds.json';
 
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ import Typewriter from 'typewriter-effect';
 
 export default function ErrorPage() {
 
-    const path = backgrounds[0].path;
+    const path = '/images/pres-back.jpeg';
 
     return (
         <div className='error-container' style={{ backgroundImage: `url(${path})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
