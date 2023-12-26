@@ -60,7 +60,8 @@ export default function Form() {
                         </div>
                     </div>
                     <div className="form-field">
-                        <textarea placeholder='Message' value={area} onChange={(e) => setArea(e.target.value)}></textarea>
+                        <label htmlFor='message'>Message</label>
+                        <textarea id='message' placeholder='Message' value={area} onChange={(e) => setArea(e.target.value)}></textarea>
                     </div>
                     <div className="form-field">
                         <button style={{ fontFamily: "'signika', sans-serif", fontWeight: '400' }} onClick={messageSent} className="submit" type='submit'>

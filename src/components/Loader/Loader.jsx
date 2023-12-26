@@ -15,7 +15,6 @@ export default function Loader() {
     const [noReload, setNoReload] = useState(false);
     const [reloadOneMore, setReloadOneMore] = useState(false);
 
-    let timeout;
     let textTimeout;
 
     const timeoutRef = useRef(null);
