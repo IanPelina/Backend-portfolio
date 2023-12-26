@@ -17,7 +17,7 @@ export default function Home() {
     }
 
     return (
-        <div className="home-container" style={{ backgroundImage: `url(${path})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundAttachment: 'fixed' }}>
+        <div className="home-container" style={{ backgroundImage: `url(${path})`}}>
             <Nav>
                 <ul className='links'>
                     <li><a className='link' href='/cv-dev.pdf' target='_blank'>CV</a></li>
