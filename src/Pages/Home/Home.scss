@@ -3,7 +3,8 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+//  background-size: cover;
+  position: fixed;
   backdrop-filter: brightness(0.8);
   &::before {
       content: '';
