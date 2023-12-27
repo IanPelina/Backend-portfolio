@@ -12,7 +12,7 @@ export default function Footer() {
                 </li>
             </ul>
             <div>
-                <p>© Ian LE PAPE, Tous droits réservés.</p>
+                <p>© Ian le Pape, Tous droits réservés.</p>
             </div>
         </footer>
     )

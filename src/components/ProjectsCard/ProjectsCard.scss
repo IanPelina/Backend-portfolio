@@ -13,6 +13,9 @@
     backdrop-filter: blur(10px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.5);
     border-radius: 5px;
+    @media screen and (max-width: 375px) {
+        width: 100%;
+    }
     &:hover {
         animation: delaySpaceBetween 0.1s both;
         animation-delay: 0.5s;    

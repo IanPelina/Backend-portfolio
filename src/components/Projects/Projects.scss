@@ -5,6 +5,9 @@
     padding: 2rem;
     min-height: 100vh;
     text-align: center;
+    @media screen and (max-width: 769px) {
+        padding: .5rem;
+    }
     h1 {
         z-index: 3;
         font-size: 4em;
@@ -31,6 +34,9 @@
         padding: 2rem 0;
         max-width: 1400px;
         margin: 5rem 0;
+        @media screen and (max-width: 769px) {
+            width: 100%;
+        }
         @media screen and (max-width: 375px) {
             margin: 2rem 0 5rem;
             gap: 10px;

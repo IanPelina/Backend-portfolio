@@ -6,19 +6,27 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function Loader() {
 
+    // Indique que le serveur est visible
     const [isVisible, setIsVisible] = useState(true);
+    // Indique que le serveur est ouvert 
     const [displayed, setDisplayed] = useState(true);
 
+    // Indique que le chargement n'est pas terminé
     const [isLoaded, setIsLoaded] = useState(false);
+    // Indique que le serveur n'est  pas aggrandi
     const [isMaximized, setIsMaximized] = useState(false);
+    // Indique que le serveur est toujours visible
     const [hidden, setHidden] = useState(false);
+    // Indique que l'utilisateur a fait le choix de ne pas relancer le serveur
     const [noReload, setNoReload] = useState(false);
+    // Indique que l'utilisateur a relancé le serveur 
     const [reloadOneMore, setReloadOneMore] = useState(false);
 
+    // Ici on définie timeout avec let ici car sa valeur va changé 
     let textTimeout;
-
+ 
     const timeoutRef = useRef(null);
-
+    // Affichage du message de bienvenu 
     useEffect(() => {
 
         textTimeout = setTimeout(() => {
@@ -28,19 +36,20 @@ export default function Loader() {
         return () => clearTimeout(textTimeout);
     }, []);
 
-    
+    // Affichage de la page 
     useEffect(() => {
         timeoutRef.current = setTimeout(() => {
             setIsVisible(false);
             setIsLoaded(true);
         }, 6500);
-        
+        // Après avoir afficher le message de bienvenu la page s'affiche et les comptes a rebours sont renitialisés.
         return () => {
             clearTimeout(timeoutRef.current);
             clearTimeout(textTimeout);
         };
     }, []);
 
+    // Ici on tue le serveur sans fermer le terminal 
     const killServer = () => {
         setHidden(true);
         setIsLoaded(false);
@@ -48,6 +57,7 @@ export default function Loader() {
         clearTimeout(textTimeout);
     }
 
+    // Ici on ferme completement le terminal ce qui le tue également
     const hideServer = () => {
         if (isMaximized) {
             clearTimeout(timeoutRef.current);
@@ -58,7 +68,8 @@ export default function Loader() {
             setDisplayed(false);
         }
     }
-
+    
+    // Ici on relance le serveur et renitialise les valeurs suivantes 
     const reloadServer = () => {
         setDisplayed(true);
         setHidden(false);
@@ -72,7 +83,7 @@ export default function Loader() {
             setIsVisible(false);
         },6500)
     }
-
+    // Ici on comme pour reload serveur, on va s'assurer de rénitialisé les valeurs suivantes avant de relancer le serveur
     const reloadAgain = () => {
         clearTimeout(textTimeout)
         clearTimeout(timeoutRef.current)
@@ -82,7 +93,7 @@ export default function Loader() {
         setNoReload(false);
         setReloadOneMore(false);
     }
-
+    // Bouton pour accéder directement au site et passer l'animation 
     const skipAnimation = () => {
         setIsVisible(false);
         setIsLoaded(true);

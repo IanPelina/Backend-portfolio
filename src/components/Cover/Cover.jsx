@@ -17,5 +17,3 @@ export default function Cover({detailsWork}) {
         </>
     )
 }
-
-//changer src + href 

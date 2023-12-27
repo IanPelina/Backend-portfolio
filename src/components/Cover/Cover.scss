@@ -3,7 +3,7 @@
     position: relative;
     display: inline-block;
     overflow: auto;
-    margin: 10px;
+    margin: 10px 0;
     min-width: 230px;
     width: 750px;
     color: #fff;
@@ -30,6 +30,9 @@
     backface-visibility: hidden;
     vertical-align: top;
     object-fit: cover;
+    @media screen and (max-width: 769px) {
+        object-fit: contain;
+    }
 }
 
 .snip1577:before,
