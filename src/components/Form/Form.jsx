@@ -15,9 +15,10 @@ export default function Form() {
 
     const messageSent = async (e) => {
         e.preventDefault();
-
+        // Ici on vérifie l'état des champs du formulaire avant d'envoyer la requête post à l'API
         if (name && surname && email && area) {
-
+            // Ici on attend la réponse de la requête asynchrone sendmail  
+            // définie dans le fichier nodemailer.js
             const response = await api.post("/mail", {
                 name, surname, email, area
             });

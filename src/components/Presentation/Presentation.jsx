@@ -21,7 +21,7 @@ export default function Presentation() {
                         <p className='terminal-text'>
                             Je suis développeur Front-end débutant, passioné de programmation et de jeux vidéos.
                             <br></br>
-                            J'aime découvir de nouvelles technologies et relever toujours plus de défis.
+                            J'aime découvrir de nouvelles technologies et relever toujours plus de défis.
                         </p>
                     </div>
                 <div className="profil-pic" style={{ backgroundImage: `url(${path})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover',  }}></div>
