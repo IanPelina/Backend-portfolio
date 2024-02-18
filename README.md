@@ -1,7 +1,5 @@
 # Portfolio
 
-![image](loaderPortfolio.png)
-
 ## Contexte
 Projet final de la formation, réalisation du portfolio de développeur.
 
