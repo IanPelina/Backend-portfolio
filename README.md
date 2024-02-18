@@ -1,5 +1,7 @@
 # Portfolio
 
+![image](portfolioAccueil.png)
+
 ## Contexte
 Projet final de la formation, réalisation du portfolio de développeur.
 
@@ -38,11 +40,11 @@ Créer et publier son portfolio de développeur.
 - Vérifications finales avant le déploiement<br>
   . Vérifier le responsive pour les versions desktop, tablettes et mobiles<br>
   . Commenter les parties les plus importantes du code<br>
-  . Validateurs HTML et CSS<br>
-  . Déploiement du site avec Vercel<br>
-  . SEO avec Google Lighthouse une fois le site déployé 
+  . Validateurs HTML et CSS
+- Déploiement du site avec Vercel
+- SEO avec Google Lighthouse une fois le site déployé 
 
-
+![image](loaderPortfolio.png)
 
   
 
